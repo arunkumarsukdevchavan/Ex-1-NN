@@ -47,10 +47,10 @@ df=pd.read_csv("Churn_Modelling.csv",index_col="RowNumber")         # Read the d
 df.head()
 ```
 ```Python
-df.isnull().sum()
+df.isnull().sum()                                                   # Finding Missing Values
 ```
-```Python                                                # Finding Missing Values
-df.duplicated().sum()                               # Check For Duplicates
+```Python                                               
+df.duplicated().sum()                                               # Check For Duplicates
 ```
 ```Python                                              
 df=df.drop(['Surname', 'Geography','Gender'], axis=1)               # Remove Unnecessary Columns
@@ -68,25 +68,25 @@ print("\nYtrain:\n" ,Ytrain, "\nYtest:\n", Ytest)                   # Y Train an
 
 
 ## OUTPUT:
-**DATASET:** 
+### DATASET:
 ![image](https://github.com/user-attachments/assets/4e75215a-6909-47e8-be89-f1b0dcf64069)
-**NULL VALUES:** 
+
+### NULL VALUES: 
 ![image](https://github.com/user-attachments/assets/1a4ab591-3115-42e5-88c6-c2356d1175b5)
 
-**NORMALIZED DATA:** <br>
-<img eight=45% idth=34% src="https://github.com/ROHITJAIND/EX-01-Kaggle-and-Data-preprocessing/assets/118707073/f8da2d3d-b0a5-4f5d-9b1e-dce058b9f4b4">
-<img eight=45% idth=34% align=top src="https://github.com/ROHITJAIND/EX-01-Kaggle-and-Data-preprocessing/assets/118707073/557ce4de-82fe-4b3b-9b17-83029f74d37f"><br>
-**DATA SPLITTING:** <br>
-<img eight=45% width=49% src="https://github.com/ROHITJAIND/EX-01-Kaggle-and-Data-preprocessing/assets/118707073/d312c539-39be-4335-9fda-375f3c648a5d">
-<img eight=45% width=50% align=top src="https://github.com/ROHITJAIND/EX-01-Kaggle-and-Data-preprocessing/assets/118707073/fa9f2f38-12f5-4151-8aed-5c5e128797e1"><br>
-**TRAIN AND TEST DATA:** <br>
-<img eight=45% width=49% src="https://github.com/ROHITJAIND/EX-01-Kaggle-and-Data-preprocessing/assets/118707073/55ba52a1-02e3-4565-afdc-33cc67d0bc27">
-<img eight=45% width=49% src="https://github.com/ROHITJAIND/EX-01-Kaggle-and-Data-preprocessing/assets/118707073/b12727ea-e8af-48dd-b190-64f4fc4afd29">
-<img eight=45% width=49% src="https://github.com/ROHITJAIND/EX-01-Kaggle-and-Data-preprocessing/assets/118707073/253722ea-1e06-429d-be3a-8efcb7b29d99">
-<img eight=45% width=49% src="https://github.com/ROHITJAIND/EX-01-Kaggle-and-Data-preprocessing/assets/118707073/950ef76b-d298-4c62-8912-7482d3d7d1d7">
+### NORMALIZED DATA:
+![image](https://github.com/user-attachments/assets/27a5d162-c488-42b5-b5b9-fe563cf3062c)
+### DATA SPLITTING:
+![image](https://github.com/user-attachments/assets/e5154e4d-b3f4-444e-9d20-5a3d908c4797)
+![image](https://github.com/user-attachments/assets/6d65b734-6632-4fa7-aa91-39c6feb88e5e)
 
+### TRAIN AND TEST DATA:
+![image](https://github.com/user-attachments/assets/8716f8a6-4f08-42ea-9c6a-1b86bb38ae00)
+![image](https://github.com/user-attachments/assets/4214bcfc-f2c1-4f69-b7b0-6ead12703483)
+![image](https://github.com/user-attachments/assets/f219a314-14c7-4921-a631-df59b3c46301)
+![image](https://github.com/user-attachments/assets/025abc61-60a1-4f7d-b8ca-40210b03f7f4)
 
 ## RESULT:
-Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
+Thus, Implementation of Data Preprocessing is done in python using a data set downloaded from Kaggle.
 
 
